@@ -254,7 +254,7 @@ const HomeLayout = () => {
                 <a href="https://github.com" target="_blank" rel="noopener noreferrer">
                   <BsGithub className="h-6 w-6" />
                 </a>
-                {/* Add more social icons as needed */}
+                {/* Add more social icons as needed if needed*/}
               </div>
             </div>
           </div>
