@@ -24,7 +24,7 @@ const HomeLayout = () => {
 
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: [0, 1] }} className="scroll-smooth">
-      <nav className="sticky top-0 z-20 h-14 w-full bg-resume-800 flex py-2.5 px-4 xl:px-60 items-center shadow-level-8dp">
+      <nav className="sticky top-0 z-20 h-14 w-full bg-resume-800 flex py-2.5 px-4 xl:px-600 items-center shadow-level-8dp">
         <Link href="/">
           <Image src={'/icons/resume-icon.png'} alt="logo" height="36" width="36" />
         </Link>
@@ -35,16 +35,16 @@ const HomeLayout = () => {
             </Link>
           </NavBarActions>
           <NavBarActions>
-            <Link href="#contribute" passHref={true}>
+            <Link href="#features" passHref={true}>
               <StyledButton variant="text" className="max-md:hidden">
-                Contribute
+                Features
               </StyledButton>
             </Link>
             <Link href="#about-us" passHref={true}>
               <StyledButton variant="text">About us</StyledButton>
             </Link>
             <a
-              href={'https://github.com/sadanandpai/resume-builder'}
+              href={'https://github.com/Ayush40/resume-builder'}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -123,7 +123,7 @@ const HomeLayout = () => {
 
       <div className="bg-resume-50 my-32">
         <div
-          id="contribute"
+          id="features"
           className="mx-6 md:mx-40 xl:mx-60 py-12"
           style={{ fontFamily: "'Roboto Slab', serif" }}
         >
@@ -152,7 +152,7 @@ const HomeLayout = () => {
               </div>
               <div>
                 <a
-                  href="https://github.com/sadanandpai/resume-builder"
+                  href="https://github.com/Ayush40/resume-builder"
                   target="_blank"
                   rel="noreferrer"
                 >
