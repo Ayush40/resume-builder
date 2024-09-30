@@ -18,7 +18,7 @@ const persons = [
   {
     name: 'Mhd. Anas',
     role: 'JS Developer',
-    avatar: 'https://avatars.githubusercontent.com/u/26523871?v=4',
+    avatar: 'https://avatars.githubusercontent.com/u/183343524?v=4',
     github: 'https://github.com/yakshaG',
     linkedin: 'https://www.linkedin.com/in/vivek-g-india',
   },

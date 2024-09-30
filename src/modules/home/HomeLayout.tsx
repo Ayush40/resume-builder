@@ -1,6 +1,5 @@
 import { NavBarActions, StyledButton } from '../builder/nav-bar/atoms';
 import { motion, useAnimation } from 'framer-motion';
-
 import { BsGithub } from 'react-icons/bs';
 import { Button } from '@mui/material';
 import FeatureSection from './components/Feature';
@@ -24,6 +23,7 @@ const HomeLayout = () => {
 
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: [0, 1] }} className="scroll-smooth">
+      {/* Navbar */}
       <nav className="sticky top-0 z-20 h-14 w-full bg-resume-800 flex py-2.5 px-4 xl:px-600 items-center shadow-level-8dp">
         <Link href="/">
           <Image src={'/icons/resume-icon.png'} alt="logo" height="36" width="36" />
@@ -31,7 +31,7 @@ const HomeLayout = () => {
         <div className="flex-auto flex justify-between items-center ml-5">
           <NavBarActions>
             <Link href="/builder" passHref={true}>
-              <StyledButton variant="text">Editor</StyledButton>
+              <StyledButton variant="text">NexCV</StyledButton>
             </Link>
           </NavBarActions>
           <NavBarActions>
@@ -53,6 +53,8 @@ const HomeLayout = () => {
           </NavBarActions>
         </div>
       </nav>
+
+      {/* Main Content */}
       <div
         style={{
           background: 'linear-gradient(180deg, #E7EEFA 50%, #FFFFFF 100%)',
@@ -82,21 +84,41 @@ const HomeLayout = () => {
               />
             </div>
             <div className="col-span-12 sm:col-span-8">
-              <h3 className="text-xl md:text-2xl mb-2 text-resume-400">SIMPLEST WAY TO BUILD A</h3>
+              <h3 className="text-xl md:text-5xl mb-2 text-resume-400">SIMPLEST WAY TO BUILD A</h3>
               <h1 className="text-5xl mb-12 text-resume-800">Professional Resume</h1>
 
               <div className="flex mb-10">
                 <div className="bg-resume-800 w-1 rounded-lg"></div>
-                <p className="text-lg ml-3 text-resume-800">
+                <p className="text-xl ml-3 text-resume-800">
                   &ldquo;The secret to getting ahead is getting started&rdquo;
                   <br />
                   —Mark Twain
                 </p>
               </div>
               <Link href="/builder" passHref={true}>
-                <Button variant="contained" className="bg-resume-800 mb-2">
-                  BUILD YOUR RESUME
-                </Button>
+              <Button
+  variant="contained"
+  className="bg-resume-800 mb-2 mt-4"
+  style={{
+    backgroundColor: '#3498db', // Customize your background color
+    color: 'white',
+    padding: '16px 32px',       // Increase padding for a bigger button
+    fontSize: '18px',           // Increase font size
+    borderRadius: '5px',        // Customize border radius
+    transition: 'transform 0.3s ease-in-out, background-color 0.3s', // Smooth animation
+    cursor: 'pointer',          // Change cursor on hover
+  }}
+  onMouseEnter={(e) => {
+    e.currentTarget.style.backgroundColor = '#2980b9'; // Change background color on hover
+    e.currentTarget.style.transform = 'scale(1.1)';      // Scale the button slightly on hover
+  }}
+  onMouseLeave={(e) => {
+    e.currentTarget.style.backgroundColor = '#3498db'; // Reset background color
+    e.currentTarget.style.transform = 'scale(1)';      // Reset scale
+  }}
+>
+  BUILD YOUR RESUME
+</Button>
               </Link>
               <p
                 className="xl:invisible text-resume-800"
@@ -109,6 +131,7 @@ const HomeLayout = () => {
         </div>
       </div>
 
+      {/* Feature Section */}
       <motion.div
         className="mx-6 md:mx-40 xl:mx-60 my-32 w-75"
         style={{ fontFamily: "'Roboto Slab', serif" }}
@@ -120,7 +143,6 @@ const HomeLayout = () => {
           <FeatureSection />
         </div>
       </motion.div>
-
       <div className="bg-resume-50 my-32">
         <div
           id="features"
@@ -165,7 +187,7 @@ const HomeLayout = () => {
           </div>
         </div>
       </div>
-
+      {/* About Us Section */}
       <div
         id="about-us"
         className="mx-6 md:mx-40 xl:mx-60 my-32"
@@ -179,7 +201,68 @@ const HomeLayout = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           <Person />
         </div>
+
       </div>
+
+      {/* Footer Section */}
+      <footer className="bg-resume-800 text-white py-8 mt-16">
+        <div className="mx-6 md:mx-40 xl:mx-60">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="col-span-1">
+              <h3 className="text-xl font-bold mb-2">Company</h3>
+              <ul>
+                <li className="mb-1">
+                  <Link href="#" passHref>
+                    About Us
+                  </Link>
+                </li>
+                <li className="mb-1">
+                  <Link href="#" passHref>
+                    Careers
+                  </Link>
+                </li>
+                <li className="mb-1">
+                  <Link href="#" passHref>
+                    Contact Us
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div className="col-span-1">
+              <h3 className="text-xl font-bold mb-2">Support</h3>
+              <ul>
+                <li className="mb-1">
+                  <Link href="#" passHref>
+                    Help Center
+                  </Link>
+                </li>
+                <li className="mb-1">
+                  <Link href="#" passHref>
+                    FAQs
+                  </Link>
+                </li>
+                <li className="mb-1">
+                  <Link href="#" passHref>
+                    Terms & Conditions
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div className="col-span-1">
+              <h3 className="text-xl font-bold mb-2">Follow Us</h3>
+              <div className="flex space-x-4">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                  <BsGithub className="h-6 w-6" />
+                </a>
+                {/* Add more social icons as needed */}
+              </div>
+            </div>
+          </div>
+          <p className="mt-8 text-center text-sm">
+            &copy; {new Date().getFullYear()} NexCV. All rights reserved.
+          </p>
+        </div>
+      </footer>
     </motion.div>
   );
 };
