@@ -1,16 +1,16 @@
 {
   "basics": {
-    "name": "Jane Doe",
+    "name": "Ayush Aggarwal",
     "label": "Frontend Developer",
     "image": "https://randomuser.me/api/portraits/men/18.jpg",
-    "email": "janedoe@email.com",
-    "phone": "+91 9876543210",
-    "url": "www.e-resume.vercel.app",
+    "email": "ayush@email.com",
+    "phone": "+91 xxxxxxxxxx",
+    "url": "www.resume_builder.app",
     "summary": "I am a web developer having expertise in frontend development and exposure to back- end development. I design and develop web applications using the latest technologies to deliver the product with quality code.",
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "Bengaluru",
+      "city": "Delhi",
       "countryCode": "",
       "region": ""
     },
@@ -20,38 +20,38 @@
     "profiles": [
       {
         "network": "linkedin",
-        "username": "sadanandpai",
-        "url": "https://www.linkedin.com/in/sadanandpai/"
+        "username": "Ayush",
+        "url": "https://www.linkedin.com/"
       },
       {
         "network": "twitter",
-        "username": "sadanandpai",
-        "url": "https://www.twitter.com/sadanandpai/"
+        "username": "Ayush",
+        "url": "https://www.twitter.com/Ayush_agg04/"
       },
       {
         "network": "github",
-        "username": "sadanandpai",
-        "url": "https://github.com/sadanandpai/"
+        "username": "Ayush",
+        "url": "https://github.com/Ayush40/"
       },
       {
         "network": "hackerrank",
-        "username": "paicube",
-        "url": "https://www.hackerrank.com/paicube/"
+        "username": "Ayush",
+        "url": "https://www.hackerrank.com/"
       },
       {
         "network": "hackerearth",
-        "username": "sadanandpai",
-        "url": "https://www.hackerearth.com/sadanandpai/"
+        "username": "Ayush",
+        "url": "https://www.hackerearth.com/"
       },
       {
         "network": "codechef",
-        "username": "sadanandpai",
-        "url": "https://www.codechef.com/sadanandpai/"
+        "username": "Ayush",
+        "url": "https://www.codechef.com/"
       },
       {
         "network": "leetcode",
-        "username": "paicube",
-        "url": "https://leetcode.com/paicube/"
+        "username": "Ayush",
+        "url": "https://leetcode.com/"
       }
     ]
   },
