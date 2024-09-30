@@ -131,7 +131,7 @@ const HomeLayout = () => {
             <div className="col-span-12 lg:col-span-4 mb-4 lg:mb-0 flex flex-col items-center gap-2">
               <Image src={'/icons/palette.svg'} alt="logo" height="48" width="48" />
               <p className="text-resume-800 text-xl mt-2">
-                Do you want to make your own <strong>template?</strong>
+                <strong>Creativity</strong>
               </p>
             </div>
             <div className="col-span-12 lg:col-span-1 mb-4 lg:mb-0 text-resume-800 text-4xl">
@@ -140,7 +140,7 @@ const HomeLayout = () => {
             <div className="col-span-12 lg:col-span-2 flex flex-col items-center gap-2">
               <Image src={'/icons/terminal.svg'} alt="logo" height="48" width="48" />
               <p className="text-resume-800 text-xl mt-2">
-                Do you write <strong>React</strong> code?
+                <strong>Code</strong>
               </p>
             </div>
             <div className="invisible lg:visible lg:col-span-2 text-resume-800 text-4xl mx-6">
@@ -152,7 +152,11 @@ const HomeLayout = () => {
               </div>
               <div>
                 <a
+<<<<<<< HEAD
                   href="https://github.com/Ayush40/resume-builder"
+=======
+                  href="https://github.com/Ayush40/resume-builder.git"
+>>>>>>> c2fc24e517b9a3d2a404d75d2f883b30fbc41bd3
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -179,18 +183,6 @@ const HomeLayout = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           <Person />
         </div>
-        <p className="text-resume-400 my-8 text-center lg:text-left">
-          Read our design story on&nbsp;
-          <a
-            href="https://medium.com/@yakshag/e-resume-build-a-professional-resume-design-case-study-3dc02a6359ea"
-            target="_blank"
-            rel="noreferrer"
-            className="underline"
-          >
-            Medium
-          </a>
-          ↗
-        </p>
       </div>
     </motion.div>
   );
