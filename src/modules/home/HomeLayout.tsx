@@ -152,11 +152,7 @@ const HomeLayout = () => {
               </div>
               <div>
                 <a
-<<<<<<< HEAD
                   href="https://github.com/Ayush40/resume-builder"
-=======
-                  href="https://github.com/Ayush40/resume-builder.git"
->>>>>>> c2fc24e517b9a3d2a404d75d2f883b30fbc41bd3
                   target="_blank"
                   rel="noreferrer"
                 >

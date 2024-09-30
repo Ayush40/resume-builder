@@ -2,32 +2,25 @@ import Image from 'next/image';
 
 const persons = [
   {
-    name: 'Sadanand Pai',
+    name: 'Ayush Aggarwal',
     role: 'Frontend developer',
-    avatar: 'https://avatars.githubusercontent.com/u/12962887?v=4',
-    github: 'https://github.com/sadanandpai',
-    linkedin: 'https://www.linkedin.com/in/sadanandpai/',
+    avatar: 'https://avatars.githubusercontent.com/u/100126332',
+    github: 'https://github.com/Ayush40',
+    linkedin: 'https://www.linkedin.com/in/ayush-aggarwal-b005a7198?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
   },
   {
-    name: 'Gopalakrishnan',
-    role: 'Frontend developer',
-    avatar: 'https://avatars.githubusercontent.com/u/22369081?v=4',
-    github: 'https://github.com/gopal1996',
-    linkedin: 'https://www.linkedin.com/in/gopal1996',
+    name: 'Kartik Kaushik',
+    role: 'MERN developer',
+    avatar: 'https://avatars.githubusercontent.com/u/116940711?v=4',
+    github: 'https://github.com/kartikKaushik7497',
+    linkedin: 'http://www.linkedin.com/in/kartik-kaushik-b73795218',
   },
   {
-    name: 'Vivek G',
-    role: 'Product designer, half developer',
+    name: 'Mhd. Anas',
+    role: 'JS Developer',
     avatar: 'https://avatars.githubusercontent.com/u/26523871?v=4',
     github: 'https://github.com/yakshaG',
     linkedin: 'https://www.linkedin.com/in/vivek-g-india',
-  },
-  {
-    name: 'Siva K',
-    role: 'Frontend developer',
-    avatar: 'https://avatars.githubusercontent.com/u/60533560?v=4',
-    github: 'https://github.com/siva-kannan3',
-    linkedin: 'https://www.linkedin.com/in/siva-kannan3/',
   },
 ];
 
